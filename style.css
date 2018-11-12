@@ -1,0 +1,389 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Inicia Nav Bar*/
+
+nav{
+    height:5vh;
+    width: 100%;
+    background-color: #49a9ea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10px;
+    position: fixed;
+    z-index: 1;
+}
+
+.linkNav{
+    width:70px;
+    background-color: rgba(255,255,255, 0.1);
+    height:20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin:2px;
+    text-align: center;
+    padding: 3px 10px;
+    border-radius: 6px;
+}
+
+#linkSelected{
+    background-color: #367197 !important;
+}
+
+.textoNav{
+    color:white;
+    font-size: 14px;
+}
+
+.iconosNav{
+    display: flex;
+    align-items: center;
+}
+
+.iconoNav{
+    color: white;
+    font-size: 18px;
+    margin:0 5px;
+    background-color: rgba(255,255,255, 0.1);
+    border-radius: 50%;
+    padding:3px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.iconoNav i{
+    color:white;
+    opacity: 1 !important;
+}
+
+.iconoNav img{
+    width: 40px;
+    border-radius: 60%;
+    background-color: transparent !important;
+
+}
+
+/* Termina Nav Bar*/
+
+/* Comienza Seccion*/
+
+.contenedorGeneral{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Empieza panel */
+
+.panel{
+    background-color: #416788;
+    width: 20vw;
+    height: 95vh;
+    color: white;
+    filter: drop-shadow(2px 5px 5px lightslategrey);
+    float:left;
+    overflow-y: scroll;
+    position: fixed;
+    top:5vh;
+}
+
+.panel div{
+    border-bottom: 1px solid white;
+}
+
+.panelStatus{
+    padding:0px 5%;
+}
+
+.panelStatus select{
+    background-color: rgba(255,255,255, 0.1);
+    margin: 8px 3px;
+}
+
+.panelSeccion1{
+    color:white;
+    padding:20px;
+}
+
+.panelSeccion1 img{
+    width:10vw;
+}
+
+.panelBusqueda{
+width:100%;
+}
+
+.panelBusqueda input{
+    width:80%;
+    height: 25px;
+    border-radius: 2px;
+    border:none;
+    margin: 10px 5%;
+    padding: 2px 5px;
+}
+
+.panelChat{
+    color:white;
+    margin: 10px 0;
+    padding: 2px 0;
+    border-bottom: none !important;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.panelChat p{
+    color:white;
+    font-size: 14px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.panelChat img{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.select{
+    background-color: white;
+    color:black;
+}
+
+.select p{
+    color:black;
+    font-weight: 400;
+}
+
+.status{
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.online {
+    color: greenyellow;
+}
+
+.offline{
+    background-color: transparent;
+    border: 1px solid grey !important;
+}
+/* Termina panel */
+
+/*Inicia Chat*/
+
+.chat{
+    left:20vw;
+    top:5vh;
+    width: 80vw;
+    height: 95vh;
+    overflow-y: scroll ;
+    position: fixed;
+}
+
+.infoChat{
+    background-color: #f2f2f2;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    padding: 0 20px;
+}
+
+.infoChat img{
+    width: 30px;
+    height:30px;
+    border-radius: 50px;
+}
+
+.infoChat a{
+    text-decoration: none;
+    color:#797979;
+    margin:0 10px;
+}
+
+.infoContact {
+    font-size: 20px;
+
+}
+
+.infoChat input{
+    width:10%;
+    height:3vh;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 10px;
+}
+
+.textoInfo{
+    display:inline-block;
+    font-size: 16px;
+    color:#797979;
+}
+
+/* Mensaje */
+
+.mensajes{
+    overflow-y: scroll;
+    margin-top: 7vh;
+    height: 81vh;
+}
+
+.mensaje{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.mensaje p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.contactoMensaje{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width:30%;
+}
+
+.contactoMensaje img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.contactoMensaje h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contactoMensaje p{
+    font-size: 14px;
+    color:#797979;
+}
+
+.separacion{
+    border-top: solid 1px #797979;
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+.fondoEscribirMensaje{
+    width: 100%;
+    height: 7vh;
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+}
+
+.escribirMensaje{
+    position: fixed;
+    margin: 0 8vw;
+    bottom: 0;
+    height: 7vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #797979;
+}
+
+.escribirMensaje input{
+    width:80%;
+    height:3vh;
+    border-radius: 5px;
+    border: solid 1px #797979;
+    padding: 3px 10px;
+}
+
+.escribirMensaje img{
+    width: 30px;
+    height:30px;
+    border-radius: 50px;
+}
+
+.linksMensaje i{
+    margin: 0 3px;
+}
+
+/* Termina section */
+
+/* Responsive */
+
+/* Celular */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+
+    /* Aquí van los estilos para iPhone vertical */
+
+    nav{
+        width:100%;
+    }
+    .contenedorGeneral{
+        flex-direction: column;
+
+    }
+
+    .panel{
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .chat{
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .contactoMensaje h3{
+        font-size: 1.3em;
+    }
+
+    .mensajes{
+        margin-top: 2vh;
+    }
+
+    .mensaje p{
+        font-size: .6em;
+    }
+
+    .infoChat{
+        top:0;
+        position: relative;
+    }
+
+    .separacion p{
+        font-size: .8em;
+    }
+    .escribirMensaje{
+        width: 80%;
+    }
+
+    .panelSeccion1{
+        display: inherit;
+    }
+
+    .panelSeccion1:active{
+
+    }
+
+    #panelChats:target {
+        display: none;
+    }
+
+}
